@@ -1,0 +1,44 @@
+.fixed-sidebar {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+}
+
+
+/* блок-обертка для сайдбара */
+.fixed-sidebar .sidebar-menu-wrap {
+}
+
+/* блок для ul */
+.fixed-sidebar .sidebar-menu-wrap .custom-scrollbar {
+
+
+}
+
+/* ul */
+.fixed-sidebar .sidebar-menu-wrap .custom-scrollbar .side-menu {
+    padding: 50px 0;
+    margin: 0;
+}
+
+/* li */
+.fixed-sidebar .sidebar-menu-wrap .custom-scrollbar .side-menu li {
+    padding: 10px 7px;
+}
+
+.fixed-sidebar .sidebar-menu-wrap .custom-scrollbar .side-menu li a{
+    text-decoration: none;
+    color: #8793a3;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+/* блок для бюргера  */
+.fixed-sidebar .sidebar-toggle {
+    background-color:#224ed3;
+    padding-top: 20px;
+}

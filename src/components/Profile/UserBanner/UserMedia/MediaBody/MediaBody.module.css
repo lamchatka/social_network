@@ -1,0 +1,65 @@
+
+.media-body {
+    padding: 0 10px;
+    position: relative;
+}
+
+/* count of posts, likes and comments */
+ .media-body .user-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    
+}
+
+.media-body .user-meta li {
+    margin-right: 35px;
+}
+
+
+
+/* будет в отдельной компоненте */
+.item-social {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.item-social li {
+    margin-right: 15px;
+}
+
+/* будет в отдельной компоненте */
+.user-meta {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.user-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 2px;
+    color: #fff;
+    /* font-family: 'Nunito ExtraLight'; */ 
+}
+
+.media-body .item-subtitle {
+    font-size: 14px;
+    max-width: 550px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+
+.item-social li a img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+

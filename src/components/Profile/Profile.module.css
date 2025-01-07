@@ -1,0 +1,19 @@
+/* блок с контентом */
+.content {
+    padding: 190px 0 0 101px;
+}
+
+/* контейнер для всего контента */
+.content .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+/* почему я поставил 1200, а конечная ширина 1230 */
+
+/* .content .container .buddypress-member-home {
+    margin-bottom: 100px;
+} Не работает */ 
+
+

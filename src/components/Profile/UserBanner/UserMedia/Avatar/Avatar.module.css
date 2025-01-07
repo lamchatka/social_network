@@ -1,0 +1,12 @@
+/* profile picture block */
+.item-img {
+    margin-right: 25px;
+ }
+ 
+ /* profile picture  */
+ .item-img a img {
+     border-radius: 50%;
+     width: 115px;
+     height: 115px;
+ }
+ 

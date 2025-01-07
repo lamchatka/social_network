@@ -1,0 +1,84 @@
+.fixed-header {
+    background-color: #2962ff;
+    height: 77px;
+}
+
+.navbar {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-item-logo img{
+    width: 20px;
+}
+
+.nav-item-header-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.input-group {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #224ed3;
+    width: 250px;
+    border-radius: 30px;
+
+}
+
+.input-group input {
+    padding: 5px 20px;
+    height: 33px;
+    color: #fff;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: none;
+}
+
+
+::placeholder {
+    color: #afadad;
+}
+
+.input-group-search-btn {
+    
+    
+}
+
+.input-group-search-btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    height: 36px;
+    background-color: #34b7f1;
+    width: 36px;
+    cursor: pointer;
+    
+}
+.fixed-header .navbar .nav-item-header-control .header2-login {
+    margin-right: 40px;
+}
+
+.fixed-header .navbar .nav-item-header-control .header2-login a {
+    padding: 8px 25px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* пофиксить кнопку логина */
