@@ -1,15 +1,14 @@
 import styles from "./Profile.module.css";
-import UserBanner from "./UserBanner/UserBanner";
-import UserTabs from "./UserTabs/UserTabs";
+import UserMainInfo from "./UserMainInfo/UserMainInfo";
 
 const Profile = () => {
   console.log(styles);
   return (
-    <div className="content">
-      <div className="buddypress-member-home">
-        <UserBanner />
-        <UserTabs />
-      </div>
+    <div className="profile-content">
+      <UserMainInfo />
+      <div>My posts</div>
+      <div>info about me</div>
+      <div>my friends list</div>
     </div>
   );
 };
