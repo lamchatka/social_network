@@ -1,0 +1,22 @@
+.tab {
+    list-style-type: none;
+    border-right: 1px solid #e4e9f1;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.tab:last-child {
+    border-right: none;
+}
+
+/* .tab .selected {
+   
+}  */
+
+.tab a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #9e9faf;
+    font-weight: 500;
+}
