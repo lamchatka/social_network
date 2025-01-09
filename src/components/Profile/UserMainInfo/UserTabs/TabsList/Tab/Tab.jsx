@@ -6,7 +6,6 @@ function Tab(props) {
   Tab.propTypes = {
     tabName: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
-    className: PropTypes.string.isRequired,
   };
 
   return (
