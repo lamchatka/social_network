@@ -3,17 +3,15 @@ import styles from "./TabsList.module.css";
 
 function TabsList() {
   const tabNamesList = [
-    { tabName: "Posts", selected: true, path: "/posts" },
-    { tabName: "About", selected: false, path: "/about" },
-    { tabName: "Friends", selected: false, path: "/friends" },
-    { tabName: "Groups", selected: false, path: "/groups" },
-    { tabName: "Photos", selected: false, path: "/groups" },
-    { tabName: "Videos", selected: false, path: "/videos" },
-    { tabName: "Badges", selected: false, path: "/badges" },
-    { tabName: "Forums", selected: false, path: "/forums" },
+    { tabName: "Posts", path: "/posts" },
+    { tabName: "About", path: "/about" },
+    { tabName: "Friends", path: "/friends" },
+    { tabName: "Groups", path: "/groups" },
+    { tabName: "Photos", path: "/pho" },
+    { tabName: "Videos", path: "/videos" },
+    { tabName: "Badges", path: "/badges" },
+    { tabName: "Forums", path: "/forums" },
   ];
-
-  //TODO СДЕЛАТЬ ПЕРЕКЛЮЧАЛКУ МЕЖДУ ТАБАМИ (ДИНАМИЧЕСКИ МЕНЯТЬ КЛАСС ACTIVE) ХЗ КАК ЭТО СДЕЛАТЬ БЕЗ USESTATE
 
   return (
     <ul className={styles["tabs-list"]}>

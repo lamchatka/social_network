@@ -10,13 +10,15 @@
     border-right: none;
 }
 
-/* .tab .selected {
-   
-}  */
+/* TODO: ДОБАВИТЬ ПСЕВДОЭЛЕМЕНТ ДЛЯ АКТИВНОГО ТАБА */
 
 .tab a {
     text-decoration: none;
     font-size: 15px;
     color: #9e9faf;
     font-weight: 500;
+}
+
+.tab .active {
+    color: #000;
 }
