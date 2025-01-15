@@ -1,0 +1,16 @@
+.content {
+    border: 2px solid orange;
+    margin-right: 15px;
+}
+
+.filters-list {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.filters {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}

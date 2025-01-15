@@ -1,0 +1,12 @@
+.item {
+    list-style-type: none;
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.item a {
+    color: #9e9faf;
+    font-size: 14px;
+}
