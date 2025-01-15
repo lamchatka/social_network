@@ -1,14 +1,7 @@
-
 .myFeed {
     width: 100%;
     border: 2px solid black;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-}
-
-
-.info {
-    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
 
 }

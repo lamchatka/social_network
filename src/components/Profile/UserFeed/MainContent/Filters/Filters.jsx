@@ -12,15 +12,13 @@ function Filters() {
   ];
 
   return (
-    <div className={styles["content"]}>
-      <div className={styles["filters-list"]}>
-        <ul className={styles["filters"]}>
-          {filtersList.map((f) => (
-            <Filter key={f} filter={f} />
-          ))}
-          <CustomSelect />
-        </ul>
-      </div>
+    <div className={styles["filters-list"]}>
+      <ul className={styles["filters"]}>
+        {filtersList.map((f) => (
+          <Filter key={f} filter={f} />
+        ))}
+        <CustomSelect />
+      </ul>
     </div>
   );
 }

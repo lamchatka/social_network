@@ -1,15 +1,13 @@
 import styles from "./UserFeed.module.css";
-import Filters from "./Filters/Filters";
-import UserPosts from "../UserPosts/UserPosts";
+import MainContent from "./MainContent/MainContent";
+import InfoSidebar from "./InfoSidebar/InfoSidebar";
 
 function UserFeed() {
   return (
     <div className={styles["myFeed"]}>
-      <Filters />
-      <div className={styles["info"]}>Info</div>
-      <UserPosts />
+      <MainContent />
+      <InfoSidebar />
     </div>
-
   );
 }
 
