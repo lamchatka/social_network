@@ -10,6 +10,8 @@ import PropTypes from "prop-types";
 const Profile = (props) => {
   Profile.propTypes = {
     profilePage: PropTypes.object,
+    addPost: PropTypes.func,
+    updatePostText: PropTypes.func,
   };
 
   return (
@@ -18,7 +20,14 @@ const Profile = (props) => {
       <Routes>
         <Route
           path="/posts"
-          element={<UserFeed posts={props.profilePage.posts} />}
+          element={
+            <UserFeed
+              posts={props.profilePage.posts}
+              postText={props.profilePage.postText}
+              addPost={props.addPost}
+              updatePostText={props.updatePostText}
+            />
+          }
         />
         <Route path="/about" element={<UserAbout />} />
       </Routes>

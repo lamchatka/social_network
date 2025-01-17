@@ -6,13 +6,21 @@ import PropTypes from "prop-types";
 function MainContent(props) {
   MainContent.propTypes = {
     posts: PropTypes.array,
+    addPost: PropTypes.func,
+    updatePostText: PropTypes.func,
+    postText: PropTypes.string,
   };
 
   return (
     <div className={styles["content"]}>
       <Filters />
       {/* TODO: здесь должны быть роуты для табов */}
-      <UserPosts posts={props.posts} />
+      <UserPosts
+        posts={props.posts}
+        postText={props.postText}
+        addPost={props.addPost}
+        updatePostText={props.updatePostText}
+      />
     </div>
   );
 }
