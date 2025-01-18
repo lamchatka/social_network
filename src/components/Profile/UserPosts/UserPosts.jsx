@@ -15,8 +15,7 @@ function UserPosts(props) {
 
   // при вызове функции стейт меняется, но перерендера не происходит. Поэтому я не вижу новый пост
   const addNewPost = () => {
-    let enteredText = newPostElement.current.value;
-    props.addPost(enteredText);
+    props.addPost();
   };
 
   const updatePostText = () => {
