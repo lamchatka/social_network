@@ -13,7 +13,6 @@ function UserPosts(props) {
 
   const newPostElement = React.createRef();
 
-  // при вызове функции стейт меняется, но перерендера не происходит. Поэтому я не вижу новый пост
   const addNewPost = () => {
     props.addPost();
   };
@@ -21,7 +20,6 @@ function UserPosts(props) {
   const updatePostText = () => {
     let enteredText = newPostElement.current.value;
     props.updatePostText(enteredText);
-    
   };
 
   console.log(props.postText);
@@ -29,7 +27,12 @@ function UserPosts(props) {
   return (
     <div>
       <div className={styles["add-new-post"]}>
-        <input ref={newPostElement} type="text" onChange={updatePostText} value={props.postText}/>
+        <input
+          ref={newPostElement}
+          type="text"
+          onChange={updatePostText}
+          value={props.postText}
+        />
         <button onClick={addNewPost}>Add</button>
       </div>
       <div className={styles["posts"]}>

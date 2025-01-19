@@ -9,7 +9,7 @@ const App = (props) => {
   App.propTypes = {
     state: PropTypes.object,
     addPost: PropTypes.func,
-    updatePostText: PropTypes.func
+    updatePostText: PropTypes.func,
   };
 
   return (
