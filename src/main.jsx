@@ -13,8 +13,8 @@ export function rerenderEntireTree(state) {
     <StrictMode>
       <App
         state={state}
-        addPost={store.addPost}
-        updatePostText={store.updatePostText}
+        addPost={store.addPost.bind(store)}
+        updatePostText={store.updatePostText.bind(store)}
       />
     </StrictMode>
   );
