@@ -2,7 +2,6 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Profile from "./components/Profile/Profile";
-import { BrowserRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const App = (props) => {
@@ -12,20 +11,18 @@ const App = (props) => {
   };
 
   return (
-    <BrowserRouter>
-      <div className="app-wrapper">
-        <Header />
-        <Sidebar />
-        <div className="content-wrapper">
-          <div className="container">
-            <Profile
-              profilePage={props.state.profilePage}
-              dispatch={props.dispatch}
-            />
-          </div>
+    <div className="app-wrapper">
+      <Header />
+      <Sidebar />
+      <div className="content-wrapper">
+        <div className="container">
+          <Profile
+            profilePage={props.state.profilePage}
+            dispatch={props.dispatch}
+          />
         </div>
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 

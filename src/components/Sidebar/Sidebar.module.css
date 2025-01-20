@@ -1,6 +1,6 @@
 .fixed-sidebar {
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #242526;
     width: 100px;
     position: fixed;
     top: 0;
@@ -39,6 +39,6 @@
 
 /* блок для бюргера  */
 .fixed-sidebar .sidebar-toggle {
-    background-color:#224ed3;
+    background-color:#242526;
     padding-top: 20px;
 }

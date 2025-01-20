@@ -1,5 +1,5 @@
 .fixed-header {
-    background-color: #2962ff;
+    background-color: #242526;
     height: 77px;
 }
 
@@ -25,7 +25,7 @@
     margin-right: 40px;
     display: flex;
     align-items: center;
-    background-color: #224ed3;
+    background-color: #343a40;
     width: 250px;
     border-radius: 30px;
 
@@ -47,7 +47,7 @@
 
 
 ::placeholder {
-    color: #afadad;
+    color: #646464;
 }
 
 .input-group-search-btn {
@@ -62,7 +62,7 @@
     border: none;
     border-radius: 50%;
     height: 36px;
-    background-color: #34b7f1;
+    background-color: #242526;
     width: 36px;
     cursor: pointer;
     
@@ -75,10 +75,11 @@
     padding: 8px 25px;
     font-weight: 500;
     border-radius: 4px;
-    color: #000;
-    background-color: #fff;
+    color: #9e9faf;
+    background-color: #343a40;
     font-size: 16px;
     line-height: 28px;
+    text-decoration: none;
 }
 
 /* пофиксить кнопку логина */
