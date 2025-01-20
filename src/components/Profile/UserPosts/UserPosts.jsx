@@ -2,6 +2,8 @@ import styles from "./UserPosts.module.css";
 import PropTypes from "prop-types";
 import Post from "./Post/Post";
 import React from "react";
+import { addPostActionCreator } from "../../../redux/state";
+import { updateNewPostTextActionCreator } from "../../../redux/state";
 
 function UserPosts(props) {
   UserPosts.propTypes = {
@@ -13,13 +15,13 @@ function UserPosts(props) {
   const newPostElement = React.createRef();
 
   const addNewPost = () => {
-    let action = {type: "ADD-POST"};
+    let action = addPostActionCreator();
     props.dispatch(action);
   };
 
-  const updatePostText = () => {
+  const updateNewPostText = () => {
     let enteredText = newPostElement.current.value;
-    let action = {type: "UPDATE-POST-TEXT", text: enteredText};
+    let action = updateNewPostTextActionCreator(enteredText);
     props.dispatch(action);
   };
 
@@ -31,7 +33,7 @@ function UserPosts(props) {
         <input
           ref={newPostElement}
           type="text"
-          onChange={updatePostText}
+          onChange={updateNewPostText}
           value={props.postText}
         />
         <button onClick={addNewPost}>Add</button>
