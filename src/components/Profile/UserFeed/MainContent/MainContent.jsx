@@ -6,8 +6,7 @@ import PropTypes from "prop-types";
 function MainContent(props) {
   MainContent.propTypes = {
     posts: PropTypes.array,
-    addPost: PropTypes.func,
-    updatePostText: PropTypes.func,
+    dispatch: PropTypes.func,
     postText: PropTypes.string,
   };
 
@@ -18,8 +17,7 @@ function MainContent(props) {
       <UserPosts
         posts={props.posts}
         postText={props.postText}
-        addPost={props.addPost}
-        updatePostText={props.updatePostText}
+        dispatch={props.dispatch}
       />
     </div>
   );

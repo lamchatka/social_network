@@ -6,20 +6,21 @@ import React from "react";
 function UserPosts(props) {
   UserPosts.propTypes = {
     posts: PropTypes.array,
-    addPost: PropTypes.func,
-    updatePostText: PropTypes.func,
+    dispatch: PropTypes.func,
     postText: PropTypes.string,
   };
 
   const newPostElement = React.createRef();
 
   const addNewPost = () => {
-    props.addPost();
+    let action = {type: "ADD-POST"};
+    props.dispatch(action);
   };
 
   const updatePostText = () => {
     let enteredText = newPostElement.current.value;
-    props.updatePostText(enteredText);
+    let action = {type: "UPDATE-POST-TEXT", text: enteredText};
+    props.dispatch(action);
   };
 
   console.log(props.postText);

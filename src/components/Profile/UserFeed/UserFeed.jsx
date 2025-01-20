@@ -6,8 +6,7 @@ import PropTypes from "prop-types";
 function UserFeed(props) {
   UserFeed.propTypes = {
     posts: PropTypes.array,
-    addPost: PropTypes.func,
-    updatePostText: PropTypes.func,
+    dispatch: PropTypes.func,
     postText: PropTypes.string,
   };
 
@@ -17,8 +16,7 @@ function UserFeed(props) {
       <MainContent
         posts={props.posts}
         postText={props.postText}
-        addPost={props.addPost}
-        updatePostText={props.updatePostText}
+        dispatch={props.dispatch}
       />
       <InfoSidebar />
     </div>

@@ -25,34 +25,32 @@ export const store = {
     },
   },
 
-  _observable() {},
+  _callSubscriber() {},
 
   getState() {
     return this._state;
   },
 
-  setState(state) {
-    this._state = state;
-  },
-
   subscribe(subscriber) {
-    this._observable = subscriber;
+    this._callSubscriber = subscriber;
   },
 
-  addPost() {
-    this._state.profilePage.posts.push({
-      id: 5,
-      text: this._state.profilePage.postText,
-      likesCount: 0,
-      commentCount: 0,
-    });
+  // DISPATCH - МЕТОД,В КОТОРЫЙ МЫ УПАКОВЫВАЕМ ВСЕ НУЖНЫЕ НАМ В КОМПОНЕНТАХ МЕТОДЫ. ACTION - ОБЪЕКТ С ОБЯЗАТЕЛЬНЫМ СВОЙСТВОМ TYPE. {type: "ADD-POST"}
+  dispatch(action) {
+    debugger;
+    if (action.type === "ADD-POST") {
+      this._state.profilePage.posts.push({
+        id: 5,
+        text: this._state.profilePage.postText,
+        likesCount: 0,
+        commentCount: 0,
+      });
 
-    this._state.profilePage.postText = "";
-    this._observable(this._state);
-  },
-
-  updatePostText(enteredText) {
-    this._state.profilePage.postText = enteredText;
-    this._observable(this._state);
+      this._state.profilePage.postText = "";
+      this._callSubscriber(this._state);
+    } else if (action.type === "UPDATE-POST-TEXT") {
+      this._state.profilePage.postText = action.text;
+      this._callSubscriber(this._state);
+    }
   },
 };

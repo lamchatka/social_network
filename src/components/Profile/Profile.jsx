@@ -10,8 +10,7 @@ import PropTypes from "prop-types";
 const Profile = (props) => {
   Profile.propTypes = {
     profilePage: PropTypes.object,
-    addPost: PropTypes.func,
-    updatePostText: PropTypes.func,
+    dispatch: PropTypes.func,
   };
 
   return (
@@ -24,8 +23,7 @@ const Profile = (props) => {
             <UserFeed
               posts={props.profilePage.posts}
               postText={props.profilePage.postText}
-              addPost={props.addPost}
-              updatePostText={props.updatePostText}
+              dispatch={props.dispatch}
             />
           }
         />

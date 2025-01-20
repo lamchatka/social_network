@@ -8,8 +8,7 @@ import PropTypes from "prop-types";
 const App = (props) => {
   App.propTypes = {
     state: PropTypes.object,
-    addPost: PropTypes.func,
-    updatePostText: PropTypes.func,
+    dispatch: PropTypes.func,
   };
 
   return (
@@ -21,8 +20,7 @@ const App = (props) => {
           <div className="container">
             <Profile
               profilePage={props.state.profilePage}
-              addPost={props.addPost}
-              updatePostText={props.updatePostText}
+              dispatch={props.dispatch}
             />
           </div>
         </div>

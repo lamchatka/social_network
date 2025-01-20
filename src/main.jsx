@@ -8,13 +8,14 @@ window.state = store.getState();
 
 const root = createRoot(document.getElementById("root"));
 
+// ЕСЛИ МЫ ПРОКИДЫВАЕМ ЧЕРЕЗ ПРОПСЫ ФУНКЦИЮ, ТО ЭТО CALLBACK-ФУНКЦИЯ 
+
 export function rerenderEntireTree(state) {
   root.render(
     <StrictMode>
       <App
         state={state}
-        addPost={store.addPost.bind(store)}
-        updatePostText={store.updatePostText.bind(store)}
+        dispatch={store.dispatch.bind(store)}
       />
     </StrictMode>
   );
