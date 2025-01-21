@@ -1,4 +1,77 @@
 .post {
+    padding: 10px 20px;
     margin-bottom: 20px;
-    background-color: bisque;
+    background-color: #242526;
+    border-radius: 8px;
+
 }
+
+.info {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.info-text {
+
+}
+
+.info-text .fullname a {
+    text-decoration: none;
+}
+
+.info-text .fullname a:hover {
+    text-decoration: underline solid #fff;
+}
+
+
+.info-text .fullname a span {
+    font-size: 14px;
+    color: #e4e6eb;
+}
+
+.info-text .published-date {
+    font-size: 13px;
+    color: #646464;
+}
+
+.text {
+    margin-top: 20px;
+    color: #e4e6eb;
+}
+
+.separating-line {
+    margin-top: 10px;
+    border-top: 1px solid #343a40;
+}
+
+.feedback {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.reactions, .comments, .share{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35px;
+    color: #9e9faf;
+    font-size: 14px;
+}
+
+/* .reactions span {
+
+} */
