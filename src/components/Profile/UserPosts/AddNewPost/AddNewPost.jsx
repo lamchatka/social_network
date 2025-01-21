@@ -1,7 +1,6 @@
 import styles from "./AddNewPost.module.css";
 import React from "react";
-import { addPostActionCreator } from "../../../../redux/state";
-import { updateNewPostTextActionCreator } from "../../../../redux/state";
+import { addPostActionCreator, updateNewPostTextActionCreator } from "../../../../redux/profilePageReducer";
 import PropTypes from "prop-types";
 
 function AddNewPost(props) {

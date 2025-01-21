@@ -1,6 +1,4 @@
-// Вынесли actionType в константы
-const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+import profilePageReducer from "./profilePageReducer";
 
 export const store = {
   _state: {
@@ -41,26 +39,7 @@ export const store = {
 
   // DISPATCH - МЕТОД,В КОТОРЫЙ МЫ УПАКОВЫВАЕМ ВСЕ НУЖНЫЕ НАМ В КОМПОНЕНТАХ МЕТОДЫ. ACTION - ОБЪЕКТ С ОБЯЗАТЕЛЬНЫМ СВОЙСТВОМ TYPE. {type: "ADD-POST"}
   dispatch(action) {
-    if (action.type === ADD_POST) {
-      this._state.profilePage.posts.push({
-        id: 5,
-        text: this._state.profilePage.postText,
-        likesCount: 0,
-        commentCount: 0,
-      });
-
-      this._state.profilePage.postText = "";
-      this._callSubscriber(this._state);
-    } else if (action.type === UPDATE_NEW_POST_TEXT) {
-      this._state.profilePage.postText = action.text;
-      this._callSubscriber(this._state);
-    }
+    profilePageReducer(this._state.profilePage, action);
+    this._callSubscriber(this._state);
   },
 };
-
-// Создал два action creator для создания action для добавления поста и изменения текста в input
-export const addPostActionCreator = () => ({ type: ADD_POST });
-export const updateNewPostTextActionCreator = (enteredText) => ({
-  type: UPDATE_NEW_POST_TEXT,
-  text: enteredText,
-});
